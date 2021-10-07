@@ -35,5 +35,10 @@ root                    (project root folder)
 
 ## Authors
 ---
+
+HEAD
 * TODO: 
 Kyle Johnson, joh19128@byui.edu
+=======
+* TODO: Neil Reed nreed31415@gmail.com
+b3d4fc7990c8c1acb9e1ec515d73c68bd93ef6e3
