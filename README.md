@@ -35,4 +35,5 @@ root                    (project root folder)
 
 ## Authors
 ---
-* TODO: Add your names and emails here
+* TODO: 
+Kyle Johnson, joh19128@byui.edu
