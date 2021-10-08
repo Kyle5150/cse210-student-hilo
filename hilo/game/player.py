@@ -1,4 +1,3 @@
-from game.dealer import Dealer
 from random import randint
 
 
@@ -15,8 +14,8 @@ class Player:
         self.first_card = randint(1,13)
         self.next_card = randint(1,13)
 
-    def draw_able(self):
-        if self.dealer.score <= 0:
+    def draw_able(self, score):
+        if score <= 0:
             self.can_draw = False
 
     def get_points(self, compare):
