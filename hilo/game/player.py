@@ -19,4 +19,5 @@ class Player:
             self.can_draw = False
 
     def get_points():
-        pass
+        score += 100
+        return points
