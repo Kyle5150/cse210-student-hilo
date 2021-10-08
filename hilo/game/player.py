@@ -10,11 +10,11 @@ class Player:
         self.can_draw = True
 
         
-    def draw():
+    def draw(self):
         self.first_card = randint(1,13)
         self.next_card = randint(1,13)
 
-    def draw_able():
+    def draw_able(self):
         if score <= 0:
             self.can_draw = False
 
