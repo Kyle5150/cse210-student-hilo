@@ -40,3 +40,4 @@ HEAD
 * Kyle Johnson, joh19128@byui.edu
 * Neil Reed nreed31415@gmail.com
 * Ben Painter ben4painter@gmail.com
+* Cal Quinton qui19011@byui.edu
