@@ -13,7 +13,7 @@ class Player:
     def draw():
         pass
 
-    def can_draw():
+    def draw_able():
         pass
 
     def get_points():
