@@ -12,7 +12,7 @@ class Player:
         
     def draw():
         self.first_card = randint(1,13)
-        self.next_card = rantint(1,13)
+        self.next_card = randint(1,13)
 
     def draw_able():
         if score <= 0:
