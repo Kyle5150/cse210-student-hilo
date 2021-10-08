@@ -15,6 +15,7 @@ class Dealer:
         while self.keep_playing:
             self.get_inputs()
             self.compare()
+            self.do_outputs()
 
             
 
