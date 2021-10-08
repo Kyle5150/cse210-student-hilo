@@ -4,7 +4,7 @@ from random import randint
 
 class Player:
 
-    def __init_(self):
+    def __init__(self):
         self.next_card = 1
         self.first_card = 1
         self.can_draw = True

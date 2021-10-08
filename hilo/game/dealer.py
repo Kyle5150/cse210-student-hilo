@@ -1,4 +1,3 @@
-from random import choice
 from game.player import Player
 
 class Dealer:
