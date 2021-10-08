@@ -16,9 +16,6 @@ class Dealer:
             self.compare()
             self.do_outputs()
 
-            
-
-
     def get_inputs(self):
         self.player.draw()
         print(f"The card is: {self.player.first_card}")
@@ -38,7 +35,7 @@ class Dealer:
 
     def do_outputs(self):
         print(f"Your score is: {self.score}")
-        if self.player.draw_able():
+        if self.player.draw_able(self.score):
             choice = input("Keep playing? (y/n) ")
             self.keep_playing = (choice == "y")
         else:
