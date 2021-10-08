@@ -10,3 +10,11 @@ class Player:
         self.can_draw = True
 
         
+    def draw():
+        pass
+
+    def can_draw():
+        pass
+
+    def get_points():
+        pass
