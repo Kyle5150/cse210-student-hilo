@@ -7,7 +7,6 @@ class Player:
         self.next_card = 1
         self.first_card = 1
         self.can_draw = True
-        self.dealer = Dealer()
 
         
     def draw(self):
