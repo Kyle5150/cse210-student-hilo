@@ -1,3 +1,4 @@
+from random import choice
 from game.player import Player
 
 class Dealer:
@@ -12,10 +13,17 @@ class Dealer:
     def start_game(self):
         
         while self.keep_playing:
-            self.player.draw()
-            print(f"The card is: {self.player.first_card}")
-            self.user_guess = input("Higher or lower? [h/l] ")
-            print(f"The next card was: {self.player.next_card}")
+            self.get_inputs()
+            self.compare()
+
+            
+
+
+    def get_inputs(self):
+        self.player.draw()
+        print(f"The card is: {self.player.first_card}")
+        self.user_guess = input("Higher or lower? [h/l] ")
+        print(f"The next card was: {self.player.next_card}")
 
     def compare(self):
         
@@ -27,3 +35,11 @@ class Dealer:
             print("They were the same. No points are given")
         else:
             self.score += self.player.get_points(False)
+
+    def do_outputs(self):
+        print(f"Your score is: {self.score}")
+        if self.player.draw_able():
+            choice = input("Keep playing? (y/n) ")
+            self.keep_playing = (choice == "y")
+        else:
+            self.keep_playing = False
