@@ -18,6 +18,9 @@ class Player:
         if score <= 0:
             self.can_draw = False
 
-    def get_points():
-        score += 100
-        return points
+    def get_points(compare):
+        if compare == True:
+            return 100
+        elif compare == False:
+            return -75
+        
