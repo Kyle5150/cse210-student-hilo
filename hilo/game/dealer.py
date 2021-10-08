@@ -7,14 +7,23 @@ class Dealer:
         self.keep_playing = True
         self.score = 300
         self.player = Player()
+        self.user_guess = "l"
     
     def start_game(self):
-
+        
         while self.keep_playing:
-
-            print(f"The card is: {}")
-            user_guess = input("Higher or lower? [h/l] ")
-            print(f"The next card was: {}")
+            self.player.draw()
+            print(f"The card is: {self.player.first_card}")
+            self.user_guess = input("Higher or lower? [h/l] ")
+            print(f"The next card was: {self.player.next_card}")
 
     def compare(self):
-        pass
+        
+        if self.user_guess.lower() == "l" and self.player.first_card > self.player.next_card:
+            self.score += self.player.get_points(True)
+        elif self.user_guess.lower() == "h" and self.player.first_card < self.player.next_card:
+            self.score += self.player.get_points(True)
+        elif self.player.first_card == self.player.next_card:
+            print("They were the same. No points are given")
+        else:
+            self.score += self.player.get_points(False)
