@@ -10,4 +10,11 @@ class Dealer:
     
     def start_game(self):
 
-        # while self.keep_playing:
+        while self.keep_playing:
+
+            print(f"The card is: {}")
+            user_guess = input("Higher or lower? [h/l] ")
+            print(f"The next card was: {}")
+
+    def compare(self):
+        pass
