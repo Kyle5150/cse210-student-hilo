@@ -37,6 +37,6 @@ root                    (project root folder)
 ---
 
 HEAD
-*Kyle Johnson, joh19128@byui.edu
+* Kyle Johnson, joh19128@byui.edu
 * Neil Reed nreed31415@gmail.com
 * Ben Painter ben4painter@gmail.com
