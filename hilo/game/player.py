@@ -1,4 +1,4 @@
-from game.dealer import Dealer
+
 from random import randint
 
 
